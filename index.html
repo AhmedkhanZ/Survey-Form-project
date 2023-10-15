@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="survey-form">
+        <h1 style="margin: 30px 0;">Customer Survey Form</h1>
+        <div class="container">
+            <form id="surveyForm ">
+                <div class="fName">
+                    <label for="firstName" class="labels">First Name:</label>
+                    <input type="text" class="input-size" placeholder="Enter firstName" id="firstName" required> <span
+                        class="error-msg" id="firstNameError"></span> <br><br>
+                </div>
+
+                <div class="lName ">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Enter lastName" class="input-size" required> <span
+                        class="error-msg" id="lastNameError"></span> <br><br>
+                </div>
+
+                <div class="dob ">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" class="input-size" required> <span class="error-msg"
+                        id="dobError"></span> <br><br>
+                </div>
+
+                <div class="dropDown">
+                    <label for="country">Country:</label>
+                    <select id="country" class="input-size" required>
+                        <option value="" disabled selected>Select Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                    </select> <span class="error-msg" id="countryError"></span> <br><br>
+                </div>
+
+                <div class="gender">
+                    <label>Gender:</label><br><br>
+                    <input type="checkbox" id="male" name="gender" value="Male">
+                    <label for="male" class="input-size">Male</label>
+                    <input type="checkbox" id="female" name="gender" value="Female">
+                    <label for="female" class="input-size">Female</label> <span class="error-msg"
+                        id="genderError"></span> <br><br>
+                </div>
+
+                <div class="profession">
+                    <label for="profession">Profession:</label>
+                    <input type="text" class="input-size" id="profession" placeholder="Enter your profession" required>
+                    <span class="error-msg" id="professionError"></span> <br><br>
+                </div>
+
+                <div class="mbl">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="number" class="input-size" id="mobile" placeholder="Enter your mobile number" required>
+                    <span class="error-msg" id="mobileError"></span> <br><br>
+                    <div>
+                </div>
+               
+                <div class="warning">
+                    <p >Note:-Before entering this field make sure above fields don't show error </p>   
+                    <p>or else form will get reset </p><br>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" class="input-size" placeholder="Enter your email " id="email" required>
+                    <span class="error-msg" id="emailError"></span> <br><br>
+                </div>
+                <button  class="btn-Class" onclick="submitForm()">Submit</button>
+                <button  class="btn-Class" onclick="resetForm()">Reset</button>
+            </form>
+            
+        </input>
+    </div>
+    <script src="script.js"></script>
+    </div>
+
+    </input>
