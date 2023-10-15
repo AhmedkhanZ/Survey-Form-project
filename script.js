@@ -1,11 +1,6 @@
 
 function submitForm() {
 
-    // Perform necessary form field validations here
-    // If all validations pass, display the popup with the form data
-    // If any validation fails, show an error message
-    // resetErrors();
-    // Example: Get form values
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let dob = document.getElementById("dob").value;
@@ -15,10 +10,7 @@ function submitForm() {
     let mobile = document.getElementById("mobile").value;
     let email = document.getElementById("email").value;
 
-    //  var errors=[];
-
     if (firstName === "" ? true : resetErrors() || firstName.length < 3) {
-        // errors.push("* FirstName cannot be less than 3-characters!")
         return document.getElementById("firstNameError").innerHTML = "* FirstName cannot be less than 3-characters!";
     }
 
